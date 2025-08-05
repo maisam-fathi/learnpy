@@ -39,7 +39,7 @@ print('Good movies Filter: ', good_movies)
 
 # Task 4: Use `map` and a lambda function to label each movie as "classic" if the year is before 2000,
 #         or "modern" otherwise. The new format should be (title, label)
-label_movies = list(map(lambda movie: movie[0], 'classic' if movie[1] < 2000 else 'modern', movies))
+label_movies = list(map(lambda movie: (movie[0], 'classic' if movie[1] < 2000 else 'modern'), movies))
 print('Modern and Classic Movies: ', label_movies)
 
 # Task 5: Sort the original `movies` list by rating (descending), using `lambda` in `sort`.
